@@ -1,0 +1,179 @@
+.header{
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    background-color: #333;
+}
+.nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+.user-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #0c1614;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-left: auto;
+}
+
+.post-header {
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.post-author-icon {
+    font-size: 16px;
+}
+.post-date {
+    font-size: 16px;
+    margin-left: auto;
+}
+
+.post-body {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.post {
+    width: 60%;
+    background-color: lightgray;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+.posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.like-btn {
+    background-color: #b3b3b3;
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    bottom: 0;
+    width: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+/*
+aadpost css
+*/
+
+body.add-post-page main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.add-post {
+    width: min(600px, 80%);
+    margin: 0 auto 40px;
+    padding: 20px 25px;
+    background-color: lightgray;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.add-post form {
+    flex-direction: row;
+    gap: 10px;
+}
+
+.add-post-body{
+    display: flex;
+    margin-bottom: 6px;
+}
+.add-post-textarea{
+    width: 100%;
+    box-sizing: border-box;
+}
+.add-post-image {
+    display: flex;
+    margin-bottom: 6px;
+    font-size: 16px;
+    color: #333;
+}
+.add-post-file {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.add-post-textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.submit-button {
+    color: gray;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 2px;
+    align-self: flex-start;
+}
+
+
+
+/* login */
+.login-card {
+    width: 300px;
+    padding: 20px;
+    background-color: lightgray;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.card-top{
+    text-align: center;
+    margin-bottom: 20px;}
+.card-bottom{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    width: auto;
+    
+}
