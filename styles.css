@@ -6,6 +6,7 @@
     font-size: 30px;
 }
 
+
 .nav{
     display: flex;
     align-items: center;
@@ -17,6 +18,12 @@
   text-decoration: none;
   text-align: center;
 }
+
+.nav a:hover {
+    background-color: rgb(212, 212, 212);
+    color: #333;
+}
+
 .user-icon {
     width: 40px;
     height: 40px;
