@@ -171,7 +171,10 @@ body.add-post-page main {
     border-radius: 2px;
     align-self: flex-start;
 }
-
+.submit-button:hover {
+    background-color: #b3b3b3;
+    color: #333;
+}
 
 
 /* login */
