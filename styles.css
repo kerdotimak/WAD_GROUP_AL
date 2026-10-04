@@ -193,3 +193,16 @@ body.add-post-page main {
     width: auto;
     
 }
+
+/* telefoni vaade */
+
+@media (max-width: 600px) {
+    .post {
+        width: 100%; 
+        padding: 12px;
+    }
+
+    .nav {
+        flex-wrap: wrap; /* vajalik aind siis kui nav'is on rohkem elemente */
+    }
+}
