@@ -19,6 +19,9 @@
   text-align: center;
 }
 
+/*
+pseudoklass
+*/
 .nav a:hover {
     background-color: rgb(212, 212, 212);
     color: #333;
@@ -57,6 +60,9 @@
     margin-left: auto;
 }
 
+/*
+child
+*/
 .post > .post-body {
     margin-top: 10px;
     font-size: 16px;
@@ -85,10 +91,16 @@
     border-radius: 5px;
 }
 
-.post-body + .post-image {
+/*
+adjacent sibling
+*/
+.post-body + .post-image { 
     margin-top: 10px;
 }
 
+/*
+general sibling
+*/
 .post-body ~ .post-actions {
     padding-top: 10px;
 }
