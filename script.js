@@ -1,3 +1,5 @@
+/* -- TASK 4 --
+
 const API_URL = "https://api.jsonbin.io/v3/b/6ae0e333ffd5d16053909488";
 
 async function loadPosts() {
@@ -5,7 +7,7 @@ async function loadPosts() {
         const response = await fetch(API_URL);
 
         if (!response.ok) {
-            throw new Error('HTTP error: ${response.status}');
+            throw new Error(`HTTP error: ${response.status}`);
         }
     
         const data = await response.json();
@@ -16,9 +18,21 @@ async function loadPosts() {
     } catch (error) {
         console.error("Error loading posts:", error);
     }
-}
+} */
 
-loadPosts();
+// Task 5
+fetch("posts.json")
+    .then((response) => response.json())
+    .then(json => {
+        console.log(json);
+        displayPosts(json);
+    })
+    .catch(err => {
+        let errDiv = document.createElement("div");
+        errDiv.className = "post";
+        errDiv.innerText = err;
+        document.getElementById("posts-container").appendChild(errDiv);
+    });
 
 
 function displayPosts(posts) {
