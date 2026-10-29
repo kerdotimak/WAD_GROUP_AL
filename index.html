@@ -14,7 +14,14 @@
       <div class="nav">
         <a href="index.html">Home</a>
         <a href="addPost.html">Add Post</a>
-        <a href="login.html" class="user-icon" title="Profile">👤</a>
+         <div class="user-menu">
+            <a href="login.html" class="user-icon" id="userIcon" title="Profile">👤</a>
+            <div class="dropdown" id="userDropdown">
+              <p class="dropdown-name">John Doe</p>
+              <p class="dropdown-email">john.doe@ut.ee</p>
+              <a href="login.html" class="logout">Logout</a>
+            </div>
+         </div>
       </div>  
     </nav>
   </header>
@@ -28,5 +35,6 @@
     © 2026 University of Tartu - Homework 1
   </footer>
   <script src="script.js"></script>
+  <script src="dropdown.js"></script>
 </body>
 </html>
