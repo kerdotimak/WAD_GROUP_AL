@@ -246,6 +246,48 @@ body.add-post-page main {
     font-weight: bold;
 }
 
+/* dropdown menu */
+.user-menu {
+    margin-left: auto;
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    right: 0;
+    display: none;
+    width: 220px;
+    padding: 10px 15px;
+    background-color: lightgray;
+}
+
+.dropdown.open {
+    display: block;
+}
+
+.dropdown p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.dropdown-name {
+    font-weight: bold;
+}
+
+.dropdown .logout {
+    display: block;
+    padding: 8px 0;
+    margin-top: 5px;
+    border-top: 1px solid gray;
+    color: #333;
+    text-align: left;
+}
+
+.dropdown .logout:hover {
+    text-decoration: underline;
+}
+
+
 /* telefoni vaade */
 
 @media (max-width: 600px) {
@@ -256,5 +298,11 @@ body.add-post-page main {
 
     .nav {
         flex-wrap: wrap; /* vajalik aind siis kui nav'is on rohkem elemente */
+    }
+
+    .dropdown {
+        position: static;          /* in the normal flow, so it pushes content down */
+        width: 150px;
+        overflow-wrap: anywhere; /* long emails wrap instead of going off screen */
     }
 }
